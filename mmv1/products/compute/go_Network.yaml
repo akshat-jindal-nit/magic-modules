@@ -144,6 +144,16 @@ properties:
         enum_values:
           - 'REGIONAL'
           - 'GLOBAL'
+      - name: 'bgpBestPathSelectionMode'
+        type: Enum
+        description: |
+          The BGP best selection algorithm to be employed. MODE can be LEGACY or STANDARD.
+        values:
+          - :LEGACY
+          - :STANDARD
+        update_verb: :PATCH
+        update_url: projects/{{project}}/global/networks/{{name}}
+        0default_from_api: true
   - name: 'mtu'
     type: Integer
     description: |
