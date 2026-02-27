@@ -61,14 +61,12 @@ examples:
       network_name: 'my-network'
       router_name: 'my-router'
       named_set_name: 'my-prefix-set'
-      route_policy_name: 'my-route-policy'
   - name: 'router_named_set_community'
-    primary_resource_id: 'community-set'
+    primary_resource_id: 'community_set'
     vars:
       network_name: 'my-network'
       router_name: 'my-router'
       named_set_name: 'my-community-set'
-      route_policy_name: 'my-route-policy'
 parameters:
   - name: 'router'
     type: ResourceRef

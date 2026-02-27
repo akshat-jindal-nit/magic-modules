@@ -20,13 +20,13 @@ resource "google_compute_router_named_set" "prefix_set" {
   type        = "NAMED_SET_TYPE_PREFIX"
   
   elements {
-    expression  = "10.0.0.0/8"
+    expression  = "'10.0.0.0/8'"
     title       = "ten-slash-eight"
     description = "A sample IPv4 prefix"
   }
 
   elements {
-    expression  = "192.168.0.0/16"
-    title       = "ninety-two-slash-sixteen"
+    expression  = "'172.16.0.0/12'"
+    title       = "seventeen-two-slash-sixteen"
   }
 }

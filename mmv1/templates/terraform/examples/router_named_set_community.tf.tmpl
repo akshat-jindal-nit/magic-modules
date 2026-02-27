@@ -20,7 +20,7 @@ resource "google_compute_router_named_set" "community_set" {
   type        = "NAMED_SET_TYPE_COMMUNITY"
   
   elements {
-    expression  = "65512:100"
+    expression  = "'65512:100'"
     title       = "community-one"
     description = "A sample BGP community"
   }
